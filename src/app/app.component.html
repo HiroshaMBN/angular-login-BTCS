@@ -1,0 +1,41 @@
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+/>
+
+<div class="align-center">
+  <h2>BCTS User Login - Test</h2>
+  <form (ngSubmit)="login()" >
+    <input
+    placeholder="username"
+    type="text"
+    name="name"
+    [(ngModel)]="name"
+    [required]="true"
+
+  />
+    <input
+      placeholder="Password"
+      type="password"
+      name="password"
+      [(ngModel)]="emp.password"
+      [required]="true"
+
+    />
+   <div class="btn-div" style="color: brown;"> {{ errors }}</div><br>
+    <div class="btn-div">
+      <button type="submit"   class="login-btn">
+        Login
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+<hr>
+<!-- <app-login></app-login> -->
+
+<router-outlet></router-outlet>
+
